@@ -35,3 +35,8 @@ HTTPS to:
 
 In Claude Code on the web, add the first two hosts under the environment's
 Network access settings.
+
+`.mcp.json` also sets `NODE_USE_ENV_PROXY=1`. Node's built-in fetch ignores
+`HTTPS_PROXY` unless this is set, so without it the server bypasses the
+environment's egress proxy and every call fails with a 403. It is harmless
+where no proxy is configured.

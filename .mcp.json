@@ -3,7 +3,13 @@
     "mastercard-developers": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@mastercard/developers-mcp@0.1.7"]
+      "args": [
+        "-y",
+        "@mastercard/developers-mcp@0.1.7"
+      ],
+      "env": {
+        "NODE_USE_ENV_PROXY": "1"
+      }
     }
   }
 }
