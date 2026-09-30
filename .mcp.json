@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mastercard-developers": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@mastercard/developers-mcp@0.1.7"]
+    }
+  }
+}
